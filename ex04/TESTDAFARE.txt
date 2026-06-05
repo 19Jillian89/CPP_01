@@ -1,0 +1,45 @@
+-Crea un file di testo, scrivi qualcosa: ciao mondo, ciao mamma
+
+-Compila
+make
+
+esegui:
+
+./replace test.txt ciao hello
+
+Dovrebbe creare:
+
+test.txt.replace
+
+contenente:
+
+hello mondo, hello a tutti
+
+Controlla:
+
+cat test.txt.replace
+
+testa questi casi:
+
+./replace
+./replace test.txt
+./replace notfound.txt a b
+./replace test.txt "" hello
+./replace test.txt ciao ""
+
+Nessuna occorrenza
+echo "abcdefg" > test2.txt
+./replace test2.txt ciao hello
+cat test2.txt.replace
+
+Output atteso:
+
+abcdefg
+Più occorrenze consecutive
+echo "aaaaaa" > test3.txt
+./replace test3.txt aa X
+cat test3.txt.replace
+
+Se il tuo algoritmo è corretto dovresti ottenere:
+
+XXX
