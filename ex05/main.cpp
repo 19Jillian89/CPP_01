@@ -6,21 +6,20 @@
 /*   By: ilnassi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 15:36:31 by ilnassi           #+#    #+#             */
-/*   Updated: 2026/06/08 15:36:40 by ilnassi          ###   ########.fr       */
+/*   Updated: 2026/06/08 15:54:06 by ilnassi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
 
-int main()
+int     main(int ac, char* av[])
 {
-    Harl harl;
-
-    harl.complain("DEBUG");
-    harl.complain("INFO");
-    harl.complain("WARNING");
-    harl.complain("ERROR");
-    harl.complain("UNKNOWN");
-
-    return 0;
+        if (ac != 2)
+        {
+                std::cerr << "Usage: ./Harl <level>\n";
+                return 1;
+        }
+        Harl harl;
+        harl.complain(av[1]);
+        return 0;
 }
