@@ -1,10 +1,26 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ilnassi <marvin@42.fr>                     +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2026/06/08 16:42:43 by ilnassi           #+#    #+#              #
+#    Updated: 2026/06/08 16:42:45 by ilnassi          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME        =   unnecessaryViolence
 
 CC          =   c++
 FLAGS       =   -Wall -Wextra -Werror -std=c++98 -I./includes
 
+# Cartelle
+INC_DIR     =   includes
+SRC_DIR     =   src
+
 SRCS        =   main.cpp \
-                src/Weapon.cpp \
+		src/Weapon.cpp \
                 src/HumanA.cpp \
                 src/HumanB.cpp
 
