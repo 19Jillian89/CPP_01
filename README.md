@@ -1,5 +1,10 @@
 # C++ Module 01 — Memory Allocation, References, Pointers to Members & Switch
 
+![Language](https://img.shields.io/badge/language-C++-blue)
+![Score](https://img.shields.io/badge/score-100%2F100-brightgreen)
+![Status](https://img.shields.io/badge/status-complete-success)
+![42](https://img.shields.io/badge/42-Common%20Core-black)
+
 > 42 School — C++ Module 01
 
 ---
